@@ -1,5 +1,5 @@
-# Project Title: eBanking || eBanking Automation by Anupam
-eBanking - Web Automation where user can login, Add new customer, Edit new customer, Delete new customer, Add new Account, Edit Account, Delete account, Bank statement etc perform operation. 
+# Project Title: eBanking Application
+eBanking Application - Web Automation where user can login, Add new customer, Edit new customer, Delete new customer, Add new Account, Edit Account, Delete account, Bank statement etc perform operations.
 
 Built With : This section list about framework, tools and technologies used to built project using:
 Python
