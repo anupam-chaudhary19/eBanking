@@ -1,5 +1,4 @@
 import time
-
 from selenium import webdriver
 from Locators.locators import locators
 from Locators.Globalvariable import globalvar
@@ -80,6 +79,7 @@ class Testsuite_banking(unittest.TestCase):
         log.enter_password(globalvar.pwd)
         log.Login_btn()
         edcust = Editcustomer(driver)
+        time.sleep(5)
         edcust.Click_Custlink()
         edcust.Enter_custid()
         edcust.Submit()

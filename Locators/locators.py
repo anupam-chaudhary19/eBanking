@@ -27,7 +27,7 @@ class locators():
     custid = "//*[@id='customer']/tbody/tr[4]/td[2]"
 
     # Edit Customer page web elements
-    Editcustomerlink = "/html/body/div[2]/div/div/ul/li[3]/a"
+    Editcustomerlink = "/html/body/div[3]/div/ul/li[3]/a"
     Edit_custid = "cusid"
     Edit_submit = "AccSubmit"
     Reset = "reset"
