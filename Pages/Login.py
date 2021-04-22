@@ -1,5 +1,7 @@
 from selenium import webdriver
 from Locators.locators import locators
+import sys
+sys.path.append("C:/Users/Anupam/PycharmProjects/eBanking")
 
 class login():
 

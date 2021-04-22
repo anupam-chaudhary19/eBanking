@@ -1,12 +1,14 @@
 import time
+import HtmlTestRunner
 from selenium import webdriver
-from Locators.locators import locators
-from Locators.Globalvariable import globalvar
 import unittest
+import sys
+sys.path.append("C:/Users/Anupam/PycharmProjects/eBanking")
 from Pages.Login import login
 from Pages.Manager import Manager
 from Pages.Newcustomer import Newcustomer
 from Pages.Editcustomer import Editcustomer
+from Locators.Globalvariable import globalvar
 
 class Testsuite_banking(unittest.TestCase):
     @classmethod
@@ -87,3 +89,6 @@ class Testsuite_banking(unittest.TestCase):
     def tearDown(self) -> None:
         self.driver.close()
         self.driver.quit()
+
+if __name__ == '__main__':
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='C:/Users/Anupam/PycharmProjects/eBanking/Reports'))
