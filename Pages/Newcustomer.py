@@ -66,10 +66,10 @@ class Newcustomer():
         self.driver.find_element_by_xpath(self.SuccessConfirmmessage_xpath).click()
 
     def WriteCustid_toexcel(self):
-        wb = openpyxl.load_workbook(globalvar.path)
+        wb = openpyxl.load_workbook(globalvar.path1)
         sheet = wb.active
         sheet.cell(1, 1).value = self.driver.find_element_by_xpath(self.Custid_xpath).text
-        wb.save("C:\\Users\\Anupam\\Desktop\\Test_Cust.xlsx")
+        wb.save("C:\\Users\\Anupam\\PycharmProjects\\eBanking\\ReadWritedata\\Test_Cust.xlsx")
 
     def Resetbtn(self):
         self.driver.find_element_by_name(self.Reset_btn_name).click()

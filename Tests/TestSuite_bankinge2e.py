@@ -7,6 +7,7 @@ import unittest
 from Pages.Login import login
 from Pages.Manager import Manager
 from Pages.Newcustomer import Newcustomer
+from Pages.Editcustomer import Editcustomer
 
 class Testsuite_banking(unittest.TestCase):
     @classmethod
@@ -70,6 +71,18 @@ class Testsuite_banking(unittest.TestCase):
         time.sleep(5)
         newcust.WriteCustid_toexcel()
         time.sleep(10)
+
+    def test_EditCust_TC004(self):
+        driver = self.driver
+        driver.get(globalvar.baseURL)
+        log = login(driver)
+        log.enter_userid(globalvar.un)
+        log.enter_password(globalvar.pwd)
+        log.Login_btn()
+        edcust = Editcustomer(driver)
+        edcust.Click_Custlink()
+        edcust.Enter_custid()
+        edcust.Submit()
 
     def tearDown(self) -> None:
         self.driver.close()
